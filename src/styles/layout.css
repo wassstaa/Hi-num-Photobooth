@@ -1,0 +1,84 @@
+/* src/styles/layout.css */
+/* Struktur layout dasar — container, grid, flex helper, dipakai lintas pages & components */
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--color-base);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--space-6);
+  gap: var(--space-6);
+}
+
+.page-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-5);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.stack-sm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.row-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-2);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+}
