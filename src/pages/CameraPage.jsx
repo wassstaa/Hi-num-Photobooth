@@ -12,8 +12,6 @@ export default function CameraPage() {
   const { permissionState, initCamera } = useCameraContext();
 
   const needsPermission = permissionState !== "granted";
-
-  console.log("permissionState =", permissionState);
   
   return (
     <div className="page">
