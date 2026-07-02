@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 4300" width="1200" height="4300">
+  <rect x="0" y="0" width="1200" height="4300" fill="#E4E4E4"/>
+  
+  <rect x="60" y="70" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="1"/>
+  <rect x="60" y="900" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="2"/>
+  <rect x="60" y="1730" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="3"/>
+  <rect x="60" y="2560" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="4"/>
+  
+  <text data-role="date" x="600.0" y="3460" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="36" fill="#1A1A1A">dd.mm.yyyy</text>
+  <text data-role="brand" x="600.0" y="3514" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="26" fill="#F5CDD8" stroke="#000000" stroke-width="1.1" paint-order="stroke fill">Hi'num</text>
+</svg>
