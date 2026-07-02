@@ -1,5 +1,7 @@
-// src/hooks/useCamera.js
-// Hook utama untuk kelola kamera: init, attach ke <video>, cleanup otomatis saat unmount
+// Hook utama untuk kelola kamera: init, attach ke <video>.
+// CATATAN: kamera TIDAK di-stop otomatis saat komponen unmount, karena React StrictMode
+// (development) sengaja mount-unmount-mount komponen sekali, yang bikin kamera mati sendiri
+// kalau di-stop di sini. Stop kamera dipanggil eksplisit dari halaman yang butuh (CameraPage).
 
 import { useEffect, useCallback } from "react";
 import { useCameraContext } from "../context/CameraContext";
@@ -22,14 +24,6 @@ export function useCamera() {
       videoRef.current.srcObject = stream;
     }
   }, [stream, videoRef]);
-
-  // Cleanup: matikan kamera begitu komponen yang pakai hook ini unmount
-  // (mencegah bug lama: stream nyala terus / konflik antar mode)
-  useEffect(() => {
-    return () => {
-      stopCamera();
-    };
-  }, [stopCamera]);
 
   const isReady = permissionState === "granted" && !!stream;
   const isPending = permissionState === "pending";
