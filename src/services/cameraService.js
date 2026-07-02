@@ -6,7 +6,6 @@ import { getBestSupportedConstraints } from "../utils/imageQuality";
 let activeStream = null;
 
 export async function startCamera(facingMode = "user") {
-export async function startCamera(facingMode = "user") {
   // Kalau ada stream aktif, matikan dulu biar gak konflik (penyebab black screen di mode Blur dulu)
   stopCamera();
 
