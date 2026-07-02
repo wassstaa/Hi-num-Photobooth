@@ -1,0 +1,11 @@
+.app-footer {
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.footer-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.02em;
+}
