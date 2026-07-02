@@ -2,7 +2,7 @@
 // Sound shutter ala Fujifilm — volume gak keras, tetap aman kalau browser di-mute
 // (browser mute/tab-mute otomatis membisukan elemen <audio>, jadi ini sudah "safe by default")
 
-import { SOUNDS, SHUTTER_SOUND_VOLUME } from "../data/uiConfig";
+import { SOUNDS } from "../data/uiConfig";
 import { SHUTTER_SOUND_VOLUME as VOLUME_FALLBACK } from "../data/constants";
 
 let shutterAudio = null;
