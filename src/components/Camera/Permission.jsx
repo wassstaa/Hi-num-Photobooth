@@ -3,7 +3,7 @@
 import "./Camera.css";
 import { usePermission } from "../../hooks/usePermission";
 import { UI_ELEMENTS } from "../../data/uiConfig";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import PrimaryButton from "../buttons/PrimaryButton";
 import Modal from "../Modal/Modal";
 
 export default function Permission({ isOpen, onAllow, isDenied }) {
