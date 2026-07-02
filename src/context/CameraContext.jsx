@@ -33,13 +33,10 @@ export function CameraProvider({ children }) {
   }, []);
 
   const stopCamera = useCallback(() => {
-  console.log("STOP CAMERA CALLED");
-  console.trace();
-
-  stopCameraService();
-  setStream(null);
-  setPermissionState("idle");
-}, []);
+    stopCameraService();
+    setStream(null);
+    setPermissionState("idle");
+  }, []);
 
   const restartCamera = useCallback(async () => {
     stopCamera();
