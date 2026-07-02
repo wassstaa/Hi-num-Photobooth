@@ -15,22 +15,28 @@ export function CameraProvider({ children }) {
   const videoRef = useRef(null);
 
   const initCamera = useCallback(async () => {
-    setPermissionState("pending");
-    setError(null);
+  console.log("initCamera called");
 
-    const result = await requestCameraPermission();
+  setPermissionState("pending");
+  setError(null);
 
-    if (result.granted) {
-      setStream(result.stream);
-      setResolutionUsed(result.resolutionUsed);
-      setPermissionState("granted");
-    } else {
-      setPermissionState("denied");
-      setError(result.reason);
-    }
+  const result = await requestCameraPermission();
 
-    return result;
-  }, []);
+  console.log("Result:", result);
+
+  if (result.granted) {
+    console.log("SUCCESS");
+    setStream(result.stream);
+    setResolutionUsed(result.resolutionUsed);
+    setPermissionState("granted");
+  } else {
+    console.log("FAILED:", result.reason, result.error);
+    setPermissionState("denied");
+    setError(result.reason);
+  }
+
+  return result;
+}, []);
 
   const stopCamera = useCallback(() => {
     stopCameraService();
