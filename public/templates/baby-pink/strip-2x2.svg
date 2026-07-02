@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2100" width="2400" height="2100">
-  <rect x="0" y="0" width="2400" height="2100" fill="#F5CDD8"/>
-  <rect x="0" y="0" width="2400" height="2100" fill="url(#polka2)"/>
-  <rect x="60" y="60" width="1080" height="810" rx="10" fill="#FFFFFF" data-photo-slot="1"/>
-  <rect x="1260" y="60" width="1080" height="810" rx="10" fill="#FFFFFF" data-photo-slot="2"/>
-  <rect x="60" y="890" width="1080" height="810" rx="10" fill="#FFFFFF" data-photo-slot="3"/>
-  <rect x="1260" y="890" width="1080" height="810" rx="10" fill="#FFFFFF" data-photo-slot="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 2220" width="2400" height="2220">
+  <rect x="0" y="0" width="2400" height="2220" fill="#F5CDD8"/>
   
-  <text data-role="date" x="1200.0" y="1770" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="30" fill="#1A1A1A">dd.mm.yyyy</text>
-  <text data-role="brand" x="1200.0" y="1812" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="22" fill="#F5CDD8">Hi'num</text>
+  <rect x="55" y="70" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="1"/>
+  <rect x="1265" y="70" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="2"/>
+  <rect x="55" y="940" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="3"/>
+  <rect x="1265" y="940" width="1080" height="800" rx="12" fill="#FFFFFF" data-photo-slot="4"/>
+  
+  <text data-role="date" x="1200.0" y="1870" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="34" fill="#1A1A1A">dd.mm.yyyy</text>
+  <text data-role="brand" x="1200.0" y="1918" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="24" fill="#F5CDD8" stroke="#000000" stroke-width="1.1" paint-order="stroke fill">Hi'num</text>
 </svg>
