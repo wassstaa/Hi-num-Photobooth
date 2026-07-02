@@ -58,7 +58,7 @@ export const UI_ELEMENTS = {
 // ============================
 export const SOUNDS = {
   shutter: "/sounds/shutter.mp3",
-  countdown: "/sounds/countdown.mp3",
+  countdown: "/sounds/countdown3.mp3",
 };
 
 // ============================
