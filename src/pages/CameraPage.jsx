@@ -13,6 +13,8 @@ export default function CameraPage() {
 
   const needsPermission = permissionState !== "granted";
 
+  console.log("permissionState =", permissionState);
+  
   return (
     <div className="page">
       <Header />
