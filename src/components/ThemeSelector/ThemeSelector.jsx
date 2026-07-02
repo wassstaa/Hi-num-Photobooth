@@ -5,7 +5,7 @@ import "./ThemeSelector.css";
 import { THEME_OPTIONS } from "../../data/themeOptions";
 import { UI_ELEMENTS } from "../../data/uiConfig";
 import ThemeCard from "./ThemeCard";
-import PrimaryButton from "../Buttons/PrimaryButton";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 export default function ThemeSelector({ gridId, selectedThemeId, onSelectTheme, onConfirm }) {
   return (
