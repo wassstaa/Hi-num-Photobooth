@@ -1,0 +1,120 @@
+.camera-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-5);
+}
+
+.camera-frame {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-surface-muted);
+  box-shadow: var(--shadow-md);
+}
+
+.camera-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1); /* mirror biar terasa natural kayak cermin */
+}
+
+/* ===== Countdown ===== */
+.countdown-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.countdown-ring {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+.countdown-number {
+  position: relative;
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  font-family: var(--font-family-base);
+}
+
+/* ===== Flash ===== */
+.flash-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-white);
+  pointer-events: none;
+  z-index: var(--z-flash);
+  opacity: 0;
+}
+
+/* ===== Progress ===== */
+.camera-progress {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.camera-progress-track {
+  flex: 1;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-muted);
+  overflow: hidden;
+}
+
+.camera-progress-fill {
+  height: 100%;
+  background-color: var(--color-accent-pink);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+
+.camera-progress-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-secondary);
+  min-width: 36px;
+  text-align: right;
+}
+
+/* ===== Controls ===== */
+.camera-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Permission ===== */
+.permission-illustration {
+  width: 120px;
+  height: 120px;
+  margin-inline: auto;
+  margin-bottom: var(--space-4);
+}
+
+.permission-message {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-3);
+}
+
+.permission-denied-note {
+  font-size: var(--font-size-xs);
+  color: var(--color-danger);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-4);
+  }
