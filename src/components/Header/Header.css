@@ -1,0 +1,23 @@
+/* Style khusus level-komponen Header.
+   Base color, border bawah, sticky positioning sudah diatur global lewat .app-header
+   di src/styles/globals.css — file ini menata isi di dalamnya. */
+
+.header-inner {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  height: 22px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    max-width: 560px;
+  }
+}
