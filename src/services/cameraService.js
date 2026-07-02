@@ -6,21 +6,15 @@ import { getBestSupportedConstraints } from "../utils/imageQuality";
 let activeStream = null;
 
 export async function startCamera(facingMode = "user") {
+export async function startCamera(facingMode = "user") {
+  // Kalau ada stream aktif, matikan dulu biar gak konflik (penyebab black screen di mode Blur dulu)
   stopCamera();
 
-  const stream = await navigator.mediaDevices.getUserMedia({
-    video: {
-      facingMode,
-    },
-    audio: false,
-  });
+  const { constraints, resolutionUsed } = await getBestSupportedConstraints(facingMode);
+  const stream = await navigator.mediaDevices.getUserMedia(constraints);
 
   activeStream = stream;
-
-  return {
-    stream,
-    resolutionUsed: "AUTO",
-  };
+  return { stream, resolutionUsed };
 }
 
 export function stopCamera() {
