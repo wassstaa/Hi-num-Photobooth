@@ -1,0 +1,21 @@
+.print-animation-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.print-animation-shadow {
+  position: absolute;
+  bottom: -20px;
+  width: 90%;
+  opacity: 0;
+}
+
+.print-animation-strip {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  transform-origin: top center;
+}
