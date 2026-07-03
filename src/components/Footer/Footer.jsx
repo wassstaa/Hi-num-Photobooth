@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="app-footer">
       <p className="footer-text">
-        {APP_NAME} &copy; {year}
+        <span className="brand-wordmark footer-brand">{APP_NAME}</span> &copy; {year}
       </p>
     </footer>
   );
