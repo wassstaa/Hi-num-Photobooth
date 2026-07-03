@@ -8,6 +8,11 @@
   text-align: center;
   padding: var(--space-5);
   overflow: hidden;
+
+  /* Tarik hero naik nutup area padding-top dari .page, biar dekorasi blob
+     bisa "nembus" ke belakang header fixed dan blur-nya keliatan jelas */
+  margin-top: calc(-1 * var(--header-height));
+  padding-top: calc(var(--header-height) + var(--space-5));
 }
 
 .hero-content {
