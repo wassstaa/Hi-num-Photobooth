@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&amp;display=swap');
+    .brand-text { font-family: 'Lora', serif; font-weight: 700; }
+  </style>
+  <text x="0" y="28" class="brand-text" font-size="24" fill="#F5CDD8">Hi'num</text>
+</svg>
