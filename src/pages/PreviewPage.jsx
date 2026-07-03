@@ -7,15 +7,18 @@ import PrimaryButton from "../components/Buttons/PrimaryButton";
 import { useAppContext } from "../context/AppContext";
 import { useGridContext } from "../context/GridContext";
 import { useThemeContext } from "../context/ThemeContext";
+import { usePhotoContext } from "../context/PhotoContext";
 
 export default function PreviewPage() {
   const { goNext, resetToGridSelection } = useAppContext();
   const { gridId, resetGrid } = useGridContext();
   const { themeId, resetTheme } = useThemeContext();
+  const { resetPhotos } = usePhotoContext();
 
   const handleRetake = () => {
     resetGrid();
     resetTheme();
+    resetPhotos();
     resetToGridSelection();
   };
 
