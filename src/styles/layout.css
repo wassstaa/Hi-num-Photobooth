@@ -1,6 +1,3 @@
-/* src/styles/layout.css */
-/* Struktur layout dasar — container, grid, flex helper, dipakai lintas pages & components */
-
 .app-shell {
   display: flex;
   flex-direction: column;
@@ -20,8 +17,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-block: var(--space-6);
-  gap: var(--space-6);
 }
 
 .page-center {
@@ -32,6 +27,7 @@
   justify-content: center;
   text-align: center;
   gap: var(--space-5);
+  padding: var(--space-6);
 }
 
 .stack {
