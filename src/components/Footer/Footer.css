@@ -1,15 +1,26 @@
 .app-footer {
-  padding: var(--space-5);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-footer);
+  padding: var(--space-3) var(--space-5);
   text-align: center;
+  pointer-events: none;
 }
 
 .footer-text {
   font-size: var(--font-size-xs);
-  color: var(--color-text-secondary);
   font-weight: var(--font-weight-bold);
   letter-spacing: 0.02em;
 }
 
 .footer-brand {
-  font-size: var(--font-size-xs);
+  font-size: 0.7rem;
+}
+
+.footer-copyright {
+  color: var(--color-accent-pink);
+  font-family: var(--font-family-base);
+  font-size: 0.65rem;
 }
