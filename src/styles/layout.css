@@ -17,6 +17,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .page-center {
@@ -28,6 +31,7 @@
   text-align: center;
   gap: var(--space-5);
   padding: var(--space-6);
+  padding-top: calc(var(--header-height) + var(--space-6));
 }
 
 .stack {
