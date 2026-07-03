@@ -63,6 +63,7 @@
 
   /* ===== Z-INDEX SCALE ===== */
   --z-header: 100;
+  --z-footer: 90;
   --z-modal: 500;
   --z-flash: 900;
   --z-toast: 950;
